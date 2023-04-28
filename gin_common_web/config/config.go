@@ -7,3 +7,6 @@ type Configuration struct {
 	Pgsql PGSQL `mapstructure:"pgsql" json:"pgsql" yaml:"pgsql"`
 	Redis Redis `mapstructure:"redis" json:"redis" yaml:"redis"`
 }
+
+type Test struct {
+}

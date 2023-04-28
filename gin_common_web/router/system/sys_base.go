@@ -14,7 +14,7 @@ func (s *BaseRouter) InitBaseRouter(Router *gin.RouterGroup) (R gin.IRoutes) {
 	baseRouter := Router.Group("base")
 
 	{
-		baseRouter.POST("login", func(context *gin.Context) {
+		baseRouter.GET("login", func(context *gin.Context) {
 			context.JSON(http.StatusOK, "ok")
 		})
 		baseRouter.POST("register", func(context *gin.Context) {
